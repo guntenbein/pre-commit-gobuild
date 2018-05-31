@@ -1,11 +1,11 @@
 package main
 
 import (
-	"bitbucket.org/inturnco/go-sdk/helpers"
 	"fmt"
 	"os"
 	"os/exec"
 	"strings"
+	"github.com/guntenbein/pre-commit-gobuild/pre-commit-hooks/helpers"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	dirs := helpers.DirsWith(wd, "_test.go")
+	dirs := helpers.DirsWith(wd, "_test\\.go$")
 
 	for _, d := range dirs {
 		if !strings.Contains(d, "/vendor/") {
