@@ -8,3 +8,8 @@
     entry: go-test
     language: golang
     description: Runs go testing, requires golang
+-   id: goimports
+    name: goimports check
+    entry: pre-commit-hooks/goimports/run-goimports.sh
+    language: 'script'
+    description: Runs goimports
