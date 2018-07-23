@@ -2,5 +2,5 @@
 set -e
 
 for file in $(find . -type f -name "*.go" -not -path "./vendor/*"); do
-    goimports ${file}
+    goimports -w -l ${file}
 done
