@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
+	"pre-commit-gobuild/pre-commit-hooks/helpers"
 	"strings"
-	"github.com/guntenbein/pre-commit-gobuild/pre-commit-hooks/helpers"
 )
 
 func main() {
