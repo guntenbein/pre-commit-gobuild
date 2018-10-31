@@ -13,3 +13,8 @@
     entry: pre-commit-hooks/goimports/run-goimports.sh
     language: 'script'
     description: Runs goimports
+-   id: errcheck
+    name: errcheck
+    entry: pre-commit-hooks/errcheck/run-errcheck.sh
+    language: 'script'
+    description: Checks error handling
