@@ -13,3 +13,13 @@
     entry: pre-commit-hooks/goimports/run-goimports.sh
     language: 'script'
     description: Runs goimports
+-   id: errcheck
+    name:  errcheck
+    entry: pre-commit-hooks/errcheck/run-errcheck.sh
+    language: 'script'
+    description: Runs errcheck tool
+-   id: dockercheck
+    name:  dockercheck
+    entry: pre-commit-hooks/dockercheck/run-dockercheck.sh
+    language: 'script'
+    description: Runs dockerfile check tool
